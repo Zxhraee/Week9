@@ -1,0 +1,10 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Angular build output
+dist/
+.angular/
+
+# macOS cruft
+.DS_Store
