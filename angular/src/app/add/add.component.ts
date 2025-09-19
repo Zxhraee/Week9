@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ProductService, Product } from '../product.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-add',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, HttpClientModule],
   templateUrl: './add.component.html',
   styleUrl: './add.component.scss'
 })

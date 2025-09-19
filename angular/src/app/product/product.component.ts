@@ -4,11 +4,13 @@ import { RouterLink } from '@angular/router';
 import { RouterModule, Router } from '@angular/router';
 import { ProductService, Product } from '../product.service';
 import { OnInit } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-product',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterModule],
+  imports: [CommonModule, RouterLink, RouterModule, HttpClientModule],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss'
 })

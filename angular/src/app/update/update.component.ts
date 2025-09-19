@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService, Product } from '../product.service';
 import { OnInit } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-update',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, HttpClientModule],
   templateUrl: './update.component.html',
   styleUrl: './update.component.scss'
 })
