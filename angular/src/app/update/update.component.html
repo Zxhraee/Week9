@@ -1,0 +1,11 @@
+<h2>Update Product</h2>
+
+<form *ngIf="product" (ngSubmit)="save()">
+  <input [(ngModel)]="product.name" name="name" />
+  <input [(ngModel)]="product.type" name="type" />
+  <input [(ngModel)]="product.description" name="description" />
+  <input [(ngModel)]="product.price" name="price" type="number" />
+  <input [(ngModel)]="product.units" name="units" type="number" />
+  <button type="submit">Save</button>
+</form>
+

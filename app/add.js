@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 const { connect } = require("./app");
 
 async function run() {

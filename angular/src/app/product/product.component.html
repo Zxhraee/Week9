@@ -1,0 +1,22 @@
+<h2>Products</h2>
+<a routerLink="/add">Add Product</a>
+<ul>
+  <li *ngFor="let p of list">
+    <strong>{{ p.name }}</strong>  
+    <br>
+    Type: {{ p.type }}  
+    <br>
+    Description: {{ p.description }}  
+    <br>
+    Price: {{ p.price | number:'1.2-2' }}  
+    <br>
+    Units: {{ p.units }}  
+    <br>
+    ID: {{ p.id }} 
+    <br>
+    <a [routerLink]="['/update', p._id]" [state]="{ product: p }">edit</a>
+    <br>
+    <button (click)="del(p)">Delete Product</button>
+    <hr>
+  </li>
+</ul>
